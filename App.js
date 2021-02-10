@@ -5,7 +5,7 @@ import Styles from './src/styles/Styles';
 type Props = {};
 export default class App extends Component {
   render() {
-    var test = true;
+    const test = true;
     if (test) {
       console.log('True');
     } else {
