@@ -1,21 +1,15 @@
 import {StyleSheet} from 'react-native';
 
 const Styles = StyleSheet.create({
-  container: {
+  view: {
+    backgroundColor: '#cbbeb5',
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f5fcff',
+    justifyContent: 'space-between',
+    flexDirection: 'row',
   },
-  welcome: {
-    fontSize: 50,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  text: {
+    color: 'black',
+    fontSize: 35,
   },
 });
 

@@ -2,18 +2,20 @@ import React, {Component} from 'react';
 import {Text, View} from 'react-native';
 import Styles from './src/styles/Styles';
 
-type Props = {};
-export default class App extends Component {
+export default class App extends Component<Props> {
   render() {
-    const test = true;
-    if (test) {
-      console.log('True');
-    } else {
-      console.log('False');
-    }
+    console.log('Test Styles');
     return (
-      <View style={Styles.container}>
-        <Text style={Styles.welcome}>Hello World</Text>
+      <View style={Styles.view}>
+        <View style={{backgroundColor: 'red', width: 50, height: 50}}>
+          <Text>Kotak 1</Text>
+        </View>
+        <View style={{backgroundColor: 'green', width: 50, height: 50}}>
+          <Text>Kotak 2</Text>
+        </View>
+        <View style={{backgroundColor: 'yellow', width: 50, height: 50}}>
+          <Text>Kotak 3</Text>
+        </View>
       </View>
     );
   }
